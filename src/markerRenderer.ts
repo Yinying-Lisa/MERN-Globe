@@ -1,7 +1,7 @@
-import * as TWEEN from "es6-tween";
+// import * as TWEEN from "es6-tween";
 import * as THREE from "three";
-
 import { Marker } from "react-globe";
+const TWEEN = require("es6-tween");
 
 function random(scaleFactor: number): number {
   return Math.random() > 0.5

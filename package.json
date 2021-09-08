@@ -5,6 +5,8 @@
   "keywords": ["react-globe", "webgl", "visualization", "globe", "react"],
   "main": "src/index.tsx",
   "dependencies": {
+    "@types/node": "14.14.8",
+    "babel-loader": "8.0.4",
     "es6-tween": "5.5.10",
     "react": "16.9.0",
     "react-dom": "16.8.4",
@@ -17,6 +19,7 @@
     "@types/react-dom": "16.8.2",
     "typescript": "3.3.3"
   },
+  "types": "src/index.d.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
