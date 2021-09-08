@@ -11,9 +11,7 @@
         "target": "es5",
         "module": "commonjs",
         "types": [
-            "node",
-            "jest",
-            "express"
+            "node"
         ]
     }
 }
