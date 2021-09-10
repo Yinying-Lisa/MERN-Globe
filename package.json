@@ -2,7 +2,13 @@
   "name": "react-globe-311",
   "version": "1.0.0",
   "description": "https://github.com/chrisrzhou/react-globe/compare/v3.0.2...v3.1.1",
-  "keywords": ["react-globe", "webgl", "visualization", "globe", "react"],
+  "keywords": [
+    "react-globe",
+    "webgl",
+    "visualization",
+    "globe",
+    "react"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
     "@types/node": "^14.14.8",
@@ -26,5 +32,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
