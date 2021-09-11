@@ -41,6 +41,7 @@ const ImageUpload = props => {
   };
 
   return (
+    <>
     <div className="form-control">
       <input
         id={props.id}
@@ -61,6 +62,7 @@ const ImageUpload = props => {
       </div>
       {!isValid && <p>{props.errorText}</p>}
     </div>
+    </>
   );
 };
 

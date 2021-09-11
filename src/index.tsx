@@ -24,7 +24,12 @@ function App() {
 
   const openMapHandler = () => setShowMap(true);
 
+  var id = "0";
+  const [showID, setID] = useState(id)
+
   const closeMapHandler = () => setShowMap(false);
+
+ 
 
   return (
   <>
@@ -35,7 +40,7 @@ function App() {
         height="100vh"
         globeTexture="https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/globe_dark.jpg"
         markers={markers}
-        onClickMarker={(marker) => {openMapHandler()}}
+        onClickMarker={(marker) => {console.log(markers[2], Number(marker.id)); setID(marker.id); console.log(id); openMapHandler()}}
         width="100vw"
         options={options}
       />
@@ -46,9 +51,9 @@ function App() {
       <Modal
         show={showMap}
         onCancel={closeMapHandler}
-        header={markers[0].city}
+        header={markers[Number(showID)].city}
         contentClass="place-item__image"
-        img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/NYC_Empire_State_Building.jpg/640px-NYC_Empire_State_Building.jpg'
+        img = {markers[Number(showID)].url}
         footerClass="place-item__modal-actions"
         hasImage={true}
         // footer={<Button onClick={closeMapHandler}>CLOSE</Button>}

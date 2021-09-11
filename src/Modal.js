@@ -18,7 +18,7 @@ const ModalOverlay = props => {
         }
       >
         <div className={`modal__content ${props.contentClass}`}>
-          {props.hasImage && <img src={props.img} alt="unable to show"/>}
+          {props.hasImage && <img id="cloud-img" src={props.img} alt="unable to show"/>}
           {props.children}
         </div>
         <div className={`modal__footer ${props.footerClass}`}>
