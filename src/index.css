@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ovo|Karla");
+ * {
+	 box-sizing: border-box;
+}
+ html {
+	 font-family: 'Open Sans', sans-serif;
+}
+ body {
+	 background: rgba(0, 0, 0, 0.95);
+	 height: 100vh;
+	 margin: 0;
+	 overflow: hidden;
+	 padding: 0;
+	 width: 100vw;
+}
+ body * {
+	 color: #fcdcbf;
+	 font-family: Karla, sans-serif;
+	 font-size: 16px;
+	 text-rendering: geometricPrecision;
+	 -webkit-font-smoothing: antialiased;
+}
+ @media only screen and (max-width: 320px) {
+	 body * {
+		 font-size: 12px;
+	}
+}
+ body a {
+	 cursor: pointer;
+	 font-weight: bold;
+	 pointer-events: auto;
+}
+ body a:hover {
+	 color: #fef7f0;
+}
+ body p {
+	 margin-block-end: 3em;
+	 margin-block-start: 1em;
+}
+ body h1, body h2 {
+	 color: #fff;
+	 font-family: Ovo, serif;
+	 margin: 12px 0;
+}
+ body h1 {
+	 font-size: 48px;
+}
+ @media only screen and (max-width: 320px) {
+	 body h1 {
+		 font-size: 36px;
+	}
+}
+ body h2 {
+	 font-size: 32px;
+}
+ @media only screen and (max-width: 320px) {
+	 body h2 {
+		 font-size: 16px;
+	}
+}
+ .slide-in-left-enter {
+	 transform: translateX(-100%);
+}
+ .slide-in-left-enter-active {
+	 transform: translateX(0);
+	 opacity: 1;
+	 transition: all 200ms;
+}
+ .slide-in-left-exit {
+	 transform: translateX(0%);
+	 opacity: 1;
+}
+ .slide-in-left-exit-active {
+	 transform: translateX(-100%);
+	 opacity: 0;
+	 transition: all 200ms;
+}
+ .center {
+	 text-align: center;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ @media only screen and (max-width: 320px) {
+	 .overlay .overlay-subtitle {
+		 display: none;
+	}
+}
+ @keyframes fade-in {
+	 0% {
+		 filter: blur(10px);
+		 opacity: 0;
+	}
+	 100% {
+		 filter: blur(0px);
+		 opacity: 1;
+	}
+}
+ @keyframes fade-out {
+	 0% {
+		 opacity: 1;
+	}
+	 100% {
+		 opacity: 0;
+	}
+}
+ .button {
+	 background-color: #222;
+	 border: 1px solid #fcdcbf;
+	 border-radius: 24px;
+	 color: #fcdcbf;
+	 cursor: pointer;
+	 padding: 12px 24px;
+	 pointer-events: auto;
+}
+ .button:hover {
+	 background-color: #3c3c3c;
+}
+ .fixed, .overlay, .about, .cover, .footer, .intro {
+	 bottom: 0;
+	 left: 0;
+	 pointer-events: none;
+	 position: fixed;
+	 right: 0;
+	 top: 0;
+}
+ .nudge-right {
+	 margin-right: 24px;
+}
+ .about {
+	 background: rgba(0, 0, 0, 0.95);
+	 box-sizing: border-box;
+	 overflow: auto;
+	 padding: 48px 24px;
+	 pointer-events: auto;
+}
+ .about .about-content {
+	 margin: 0 auto;
+	 max-width: 600px;
+	 text-align: center;
+}
+ .content {
+	 max-width: 30vw;
+	 position: absolute;
+	 right: 10%;
+	 top: 50%;
+	 transform: translate(0%, -50%);
+}
+ @media only screen and (max-width: 320px) {
+	 .content {
+		 max-width: 60vw;
+		 right: 24px;
+	}
+}
+ .cover {
+	 background-color: rgba(0, 0, 0, 0.95);
+}
+ .footer {
+	 bottom: 12px;
+	 left: auto;
+	 right: 12px;
+	 top: auto;
+}
+ .header {
+	 align-items: center;
+	 display: flex;
+	 justify-content: space-between;
+	 padding: 12px 36px;
+}
+ @media only screen and (max-width: 320px) {
+	 .header {
+		 padding: 12px;
+	}
+}
+ .hidden {
+	 opacity: 0;
+}
+ .intro {
+	 align-items: center;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 text-align: center;
+}
+ 
+#modal-hook button {
+	margin-left: 14.5rem;
+}
