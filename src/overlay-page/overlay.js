@@ -5,6 +5,8 @@ import About from './about';
 import Button from './Button';
 import Fade from './fade';
 import Modal from '../Modal';
+import { ImageBitmapLoader } from 'three';
+import ImageUpload from '../ImageUpload';
 // import Link from './link';
 
 export default function Overlay() {
@@ -45,11 +47,10 @@ export default function Overlay() {
         <Modal
         show={showModal}
         onCancel={closeMapHandler}
-        header={<h1> Hi </h1>}
+        header={<h3> Upload an image of cloud </h3>}
         contentClass="place-item__image"
-        img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/NYC_Empire_State_Building.jpg/640px-NYC_Empire_State_Building.jpg'
         footerClass="place-item__modal-actions"
-        // footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
+        footer={<ImageUpload />}
       > 
           {/* <div className="map-container">
           <Map center={props.coordinates} zoom={16} />

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
- @import url("https://fonts.googleapis.com/css?family=Ovo|Karla");
+@import url("https://fonts.googleapis.com/css?family=Ovo|Karla");
  * {
 	 box-sizing: border-box;
 }
@@ -184,3 +184,6 @@
 	 text-align: center;
 }
  
+#modal-hook button {
+	margin-left: 14.5rem;
+}

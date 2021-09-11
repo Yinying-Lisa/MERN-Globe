@@ -21,9 +21,9 @@ const ModalOverlay = props => {
           <img src={props.img} />
           {props.children}
         </div>
-        <footer className={`modal__footer ${props.footerClass}`}>
+        <div className={`modal__footer ${props.footerClass}`}>
           {props.footer}
-        </footer>
+        </div>
       </form>
     </div>
   );
