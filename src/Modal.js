@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
+// const TWEEN = require("react-transition-group");
 
 import Backdrop from './Backdrop';
 import './Modal.css';
@@ -17,6 +18,7 @@ const ModalOverlay = props => {
         }
       >
         <div className={`modal__content ${props.contentClass}`}>
+          <img src={props.img} />
           {props.children}
         </div>
         <footer className={`modal__footer ${props.footerClass}`}>
