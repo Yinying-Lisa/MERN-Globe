@@ -41,7 +41,7 @@ function App() {
         onCancel={closeMapHandler}
         header={markers[0].city}
         contentClass="place-item__image"
-        img = 'D:\Yinying\MCIT\MERN\MERN-Globe\src\nyc.PNG'
+        img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/NYC_Empire_State_Building.jpg/640px-NYC_Empire_State_Building.jpg'
         // footerClass="place-item__modal-actions"
         // footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       > 
@@ -50,15 +50,15 @@ function App() {
         </div>  */}
       </Modal>
       
-      <li className="place-item">
+      {/* <li className="place-item">
       <Card className="place-item__content">
         <div className="place-item__image">
-          {/* <img src={props.image} alt={props.title} /> */}
+          <img src={props.image} alt={props.title} />
           
           <h1> Hi! </h1>
         </div>
         </Card>
-      </li>
+      </li> */}
 </>
   );
 }
