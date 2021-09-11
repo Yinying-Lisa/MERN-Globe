@@ -5,7 +5,6 @@ import About from './about';
 import Button from './Button';
 import Fade from './fade';
 import Modal from '../Modal';
-import { ImageBitmapLoader } from 'three';
 import ImageUpload from '../ImageUpload';
 // import Link from './link';
 
@@ -14,11 +13,10 @@ export default function Overlay() {
   //   { focusedMarker, start },
   //   dispatch,
   // ] = useStateValue();
-  const [showAbout, setShowAbout] = useState(false);
+  // const [showAbout, setShowAbout] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [showMap, setShowMap] = useState(false);
 
-  const openMapHandler = () => setShowMap(true);
+  let showAbout = false;
 
   const closeMapHandler = () => setShowModal(false);
 
@@ -51,6 +49,7 @@ export default function Overlay() {
         contentClass="place-item__image"
         footerClass="place-item__modal-actions"
         footer={<ImageUpload />}
+        hasImage={false}
       > 
           {/* <div className="map-container">
           <Map center={props.coordinates} zoom={16} />

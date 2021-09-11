@@ -51,6 +51,7 @@ function App() {
         contentClass="place-item__image"
         img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/NYC_Empire_State_Building.jpg/640px-NYC_Empire_State_Building.jpg'
         footerClass="place-item__modal-actions"
+        hasImage={true}
         // footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       > 
           {/* <div className="map-container">
