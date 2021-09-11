@@ -8,7 +8,6 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 import "./index.css";
 
-
 import markers from "./markers";
 import markerRenderer from "./markerRenderer";
 import Modal from "./Modal";
