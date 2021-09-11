@@ -42,6 +42,14 @@ const markers: Marker[] = [
     color: "gold",
     coordinates: [29.7604, -95.3698],
     value: 54
+  },
+
+  {
+    id: "7",
+    city: "Seattle",
+    color: "gold",
+    coordinates: [47.6062, -122.3321],
+    value: 200
   }
 ];
 
