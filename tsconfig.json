@@ -1,7 +1,7 @@
 {
   "include": [
     "./src/*"
-  ],
+, "src/overlay-page/Button.js"  ],
   "compilerOptions": {
     "lib": [
       "dom",

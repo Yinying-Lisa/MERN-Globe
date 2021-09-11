@@ -2,15 +2,18 @@ import * as React from "react";
 import { render } from "react-dom";
 import ReactGlobe from "react-globe";
 import { useState } from 'react';
+import Overlay from './overlay-page/overlay';
 
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
+import "./index.css";
+
 
 import markers from "./markers";
 import markerRenderer from "./markerRenderer";
 import Modal from "./Modal";
 import Card from "./Card";
-import Button from "./Button";
+import Button from "./overlay-page/Button";
 
 const options = {
   markerRenderer
@@ -27,6 +30,8 @@ function App() {
   return (
   <>
     <div className="App">
+      <>
+      <Overlay />
       <ReactGlobe
         height="100vh"
         globeTexture="https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/globe_dark.jpg"
@@ -35,14 +40,17 @@ function App() {
         width="100vw"
         options={options}
       />
+      
+      </>
     </div>
+    
       <Modal
         show={showMap}
         onCancel={closeMapHandler}
         header={markers[0].city}
         contentClass="place-item__image"
         img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/NYC_Empire_State_Building.jpg/640px-NYC_Empire_State_Building.jpg'
-        // footerClass="place-item__modal-actions"
+        footerClass="place-item__modal-actions"
         // footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       > 
           {/* <div className="map-container">
