@@ -6,7 +6,6 @@ import './ImageUpload.css';
 import { useForm } from './hooks/form-hook';
 import { useHttpClient } from './hooks/http-hook';
 import markers from './markers';
-import Globe from 'react-globe';
 
 const ImageUpload = props => {
 
@@ -80,14 +79,14 @@ const ImageUpload = props => {
   const [initial_markers, setMarker] = useState(false);
   const markerHandler = async event => {
     event.preventDefault();
-    markers.push({
-    id: "6",
-    city: "Seattle",
-    color: "gold",
-    url: "https://i.redd.it/5dfgxojrzvm71.jpg",
-    coordinates: [47.6062, -122.3321],
-    value: 200
-    })
+    // markers.push({
+    // id: "6",
+    // city: "Seattle",
+    // color: "gold",
+    // url: "https://i.redd.it/5dfgxojrzvm71.jpg",
+    // coordinates: [47.6062, -122.3321],
+    // value: 200
+    // })
     console.log(markers)
 
     // dispatch({ type: 'FOCUS', payload: markers[6] })
@@ -116,21 +115,24 @@ const ImageUpload = props => {
         style={{ display: 'none' }}
         type="file"
         accept=".jpg,.png,.jpeg"
-        // onChange={pickedHandler}
+        onChange={pickedHandler}
       />
       <div className={`image-upload ${props.center && 'center'}`}>
         <div className="image-upload__preview">
           {previewUrl && <img src={previewUrl} alt="Preview" />}
           {!previewUrl && <p>Please pick an image.</p>}
         </div>
-        <Button id='addImage' className='image-upload__button' type="button" label="Pick Image" onClick={pickImageHandler}>
+        
+        <Button id='addImage' className='image-upload__button' type="button" label="Upload" onClick={pickImageHandler}>
           PICK IMAGE
         </Button>
-      </div>
-      {!isValid && <p>{props.errorText}</p>}
-      <Button type="submit" label="Add your image">
+        
+        <Button id='addImage2' onClick={event =>  window.location.href='/'} type="submit" label="Submit">
           ADD PLACE
         </Button>
+      </div>
+      
+      
     </div>
     
     </form>

@@ -12,6 +12,15 @@
   flex-direction: column;
 }
 
+
+#addImage {
+  margin-bottom: 5rem;
+}
+
+#addImage1 {
+  margin-top: 5rem;
+}
+
 .image-upload__preview {
   width: 13rem;
   height: 13rem;
@@ -21,7 +30,7 @@
   align-items: center;
   text-align: center;
   margin-left: 12rem;
-  margin-bottom: 5rem;
+  margin-bottom: -5rem;
 }
 
 .image-upload__preview img {
@@ -33,7 +42,7 @@
 .image-upload__button {
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   margin-left: rem;
   margin-bottom: 5rem;
   
