@@ -102,6 +102,7 @@ const ImageUpload = props => {
     <div className="form-control">
       <p>Please enter your location: </p>
       <input
+          className = "titleName"
           id="title"
           element="input"
           type="text"
@@ -122,7 +123,7 @@ const ImageUpload = props => {
           {previewUrl && <img src={previewUrl} alt="Preview" />}
           {!previewUrl && <p>Please pick an image.</p>}
         </div>
-        <Button className='image-upload__button' type="button" label="Pick Image" onClick={pickImageHandler}>
+        <Button id='addImage' className='image-upload__button' type="button" label="Pick Image" onClick={pickImageHandler}>
           PICK IMAGE
         </Button>
       </div>
