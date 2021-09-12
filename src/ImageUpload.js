@@ -6,8 +6,10 @@ import './ImageUpload.css';
 import { useForm } from './hooks/form-hook';
 import { useHttpClient } from './hooks/http-hook';
 import markers from './markers';
+import Globe from 'react-globe';
 
 const ImageUpload = props => {
+
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const [file, setFile] = useState();
   const [previewUrl, setPreviewUrl] = useState();
@@ -86,10 +88,13 @@ const ImageUpload = props => {
     coordinates: [47.6062, -122.3321],
     value: 200
     })
-    
-    console.log(markers);
+    console.log(markers)
+
+    // dispatch({ type: 'FOCUS', payload: markers[6] })
     setMarker(true);
   };
+
+
 
   return (
     <>

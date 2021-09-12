@@ -29,8 +29,6 @@ function App() {
 
   const closeMapHandler = () => setShowMap(false);
 
- 
-
   return (
   <>
     <div className="App">
