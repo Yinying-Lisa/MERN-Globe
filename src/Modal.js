@@ -12,11 +12,11 @@ const ModalOverlay = props => {
       <header className={`modal__header ${props.headerClass}`}>
         <h2>{props.header}</h2>
       </header>
-      <form
+      {/* <form
         onSubmit={
           props.onSubmit ? props.onSubmit : event => event.preventDefault()
         }
-      >
+      > */}
         <div className={`modal__content ${props.contentClass}`}>
           {props.hasImage && <img id="cloud-img" src={props.img} alt="unable to show"/>}
           {props.children}
@@ -24,7 +24,7 @@ const ModalOverlay = props => {
         <div className={`modal__footer ${props.footerClass}`}>
           {props.footer}
         </div>
-      </form>
+      {/* </form> */}
     </div>
   );
   return ReactDOM.createPortal(content, document.getElementById('modal-hook'));

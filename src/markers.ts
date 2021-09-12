@@ -48,15 +48,6 @@ const markers: Marker[] = [
     url: 'https://i.redd.it/57lk3mo9cwm71.jpg',
     coordinates: [29.7604, -95.3698],
     value: 54
-  },
-
-  {
-    id: "6",
-    city: "Seattle",
-    color: "gold",
-    url: "https://i.redd.it/5dfgxojrzvm71.jpg",
-    coordinates: [47.6062, -122.3321],
-    value: 200
   }
 ];
 
